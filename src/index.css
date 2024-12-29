@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -11,6 +14,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 a {
@@ -23,16 +27,20 @@ a:hover {
 }
 
 body {
+ padding:10px;
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  
 }
 
 h1 {
+  
   font-size: 3.2em;
   line-height: 1.1;
+  padding:20px
 }
 
 button {
@@ -45,6 +53,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+
 }
 button:hover {
   border-color: #646cff;
@@ -65,4 +74,56 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+.image{
+  width:55px;
+}
+.nav-list-item{
+  margin-left: 20px;
+  font-size: 1.1rem;
+  color: aliceblue;
+}
+
+.header{
+  border-top-left-radius:5px ;
+  border-top-right-radius:5px ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 550px;
+  border:2px solid black;
+  background-color: #213547;
+  margin-bottom: 3px;
+  box-shadow: 2px 5px 5px 5px darkslategray ;
+
+}
+.nav-list{
+  list-style: none;
+  display: flex;
+}
+
+
+.content{
+  background-color:#242424;
+  color: antiquewhite;
+  width:550px;
+  box-shadow: 2px 5px 5px 5px darkslategray ;
+}
+.footer-content{
+  background-color: #242424;
+  color: white;
+  padding: 10px;
+  box-shadow: 2px 5px 5px 5px darkslategray ;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.list-content{
+  
+  padding-bottom: 60px;
+
+}
+.list-content-items{
+  padding:3px;
+
 }
